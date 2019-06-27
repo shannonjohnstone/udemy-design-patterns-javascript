@@ -1,0 +1,37 @@
+{
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.15.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  },
+  "name": "udemy-javascipt-design-patterns",
+  "description": "JavaScript Design Patterns",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+github.com/shannonjohnstone/udemy-design-patterns-javascript.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "eslint",
+    "prettier",
+    "starter"
+  ],
+  "author": "Shannon Johnstone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shannonjohnstone/udemy-design-patterns-javascript.git/issues"
+  },
+  "homepage": "https://github.com/shannonjohnstone/udemy-design-patterns-javascript.git#readme"
+}
