@@ -10,6 +10,7 @@ module.exports = {
     'key-spacing': ['error', { 'afterColon': true }],
     'semi': 'error',
     'quotes': ['error', 'single'],
+    'no-console': 0,
     'max-len': ['error', 80, {
       "ignoreComments": true,
       "ignoreStrings": true
