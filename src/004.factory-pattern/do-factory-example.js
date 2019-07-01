@@ -1,10 +1,10 @@
 class Facotry {
   static create(type) {
     let employee = {};
-    if (type === 'fulltime') employee = new FullTime();
-    else if (type === 'parttime') employee = new PartTime();
-    else if (type === 'temporary') employee = new Temporary();
-    else if (type === 'contractor') employee = new Contractor();
+    if (type === Facotry.types.FULLTIME) employee = new FullTime();
+    else if (type === Facotry.types.PARTTIME) employee = new PartTime();
+    else if (type === Facotry.types.TEMPORARY) employee = new Temporary();
+    else if (type === Facotry.types.CONTRACTOR) employee = new Contractor();
 
     employee.type = type;
     employee.say = () => {
@@ -12,6 +12,15 @@ class Facotry {
     };
 
     return employee;
+  }
+
+  static get types() {
+    return {
+      FULLTIME: 'fulltime',
+      PARTTIME: 'parttime',
+      TEMPORARY: 'temporary',
+      CONTRACTOR: 'contractor',
+    };
   }
 }
 
@@ -42,10 +51,10 @@ class Contractor {
 (() => {
   const employees = [];
 
-  employees.push(Facotry.create('fulltime'));
-  employees.push(Facotry.create('parttime'));
-  employees.push(Facotry.create('temporary'));
-  employees.push(Facotry.create('contractor'));
+  employees.push(Facotry.create(Facotry.types.FULLTIME));
+  employees.push(Facotry.create(Facotry.types.PARTTIME));
+  employees.push(Facotry.create(Facotry.types.PARTTIME));
+  employees.push(Facotry.create(Facotry.types.CONTRACTOR));
 
   for (let employee of employees) {
     employee.say();
