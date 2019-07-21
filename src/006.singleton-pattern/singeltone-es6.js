@@ -1,9 +1,23 @@
+/**
+ * Singleton pattern
+ * Example type: Database connection
+ *
+ * Example here shows with a singleton approach for a database connection
+ * you can not override the database connection implemented
+ */
+
 class ConnectToMongoInstanceSingleton {
   constructor(connection) {
+    // takes in connection value
     this.connection = connection;
+
+    // sets `.instance` value to `instance` variable, this will initially be `undefined`
     const instance = this.constructor.instance;
+
+    // if `instance` has already been set, return this value rather than re set
     if (instance) return instance;
 
+    // if not `.instance` value has been set we will set it
     this.constructor.instance = this;
   }
 

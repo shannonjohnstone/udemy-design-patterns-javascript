@@ -1,3 +1,16 @@
+/**
+ * Monostate Singleton
+ * Example type: CEO (There can only be one - mono)
+ *
+ * In this example the `ChiefExecutiveOfficer` class is
+ * setting the values on itself `ChiefExecutiveOfficer`
+ * using this approach means that when updated this is updated for all
+ * as its treating the class a mono singleton as it refers to itself
+ *
+ * If this was using `this` instead than it would treat the declared ceo objects
+ * as independent objects
+ */
+
 class ChiefExecutiveOfficer {
   get name() {
     return ChiefExecutiveOfficer._name;

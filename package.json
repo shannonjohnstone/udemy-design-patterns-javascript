@@ -7,7 +7,9 @@
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.4"
+    "jasmine": "^3.4.0",
+    "prettier": "^1.16.4",
+    "tape": "^4.11.0"
   },
   "name": "udemy-javascipt-design-patterns",
   "description": "JavaScript Design Patterns",
@@ -36,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/shannonjohnstone/udemy-design-patterns-javascript.git/issues"
   },
-  "homepage": "https://github.com/shannonjohnstone/udemy-design-patterns-javascript.git#readme"
+  "homepage": "https://github.com/shannonjohnstone/udemy-design-patterns-javascript.git#readme",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
 }
